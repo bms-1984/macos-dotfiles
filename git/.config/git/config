@@ -1,0 +1,12 @@
+[user]
+    name = Ben M. Sutter
+    email = benjaminsutter@outlook.com
+    signingkey = 62AF17C758C96975A1C7C065D04CD42E2230489B
+[core]
+    autocrlf = input
+[color]
+    ui = true
+[init]
+    defaultBranch = main
+[commit]
+    gpgsign = true
