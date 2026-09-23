@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 (make-directory "~/.tmp/emacs/auto-save/" t)
 (setq auto-save-file-name-transforms '((".*" "~/.tmp/emacs/auto-save/" t)))
 (setq backup-directory-alist '(("." . "~/.tmp/emacs/backup/")))

@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 (when (display-graphic-p)
   (tool-bar-mode 0)
   (scroll-bar-mode 0))

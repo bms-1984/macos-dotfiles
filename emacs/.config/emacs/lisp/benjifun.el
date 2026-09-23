@@ -1,5 +1,6 @@
+;; -*- lexical-binding: t; -*-
 (defun recompile-init ()
-  "Byte compile all my configs."
+  "Byte compile all configs."
   (interactive)
   (dolist (file (directory-files "~/.config/emacs/lisp" t))
     (when (equal (file-name-extension file) "el")

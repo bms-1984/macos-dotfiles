@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 (global-prettify-symbols-mode)
 
 (semantic-mode t)
@@ -14,12 +15,6 @@
 (fancy-compilation-mode)
 
 (global-company-mode)
-
-(global-flycheck-mode)
-(add-hook 'flycheck-mode (lambda ()
-                           (flycheck-color-mode-line-mode)
-                           (flycheck-pos-tip-mode)))
-
 (company-quickhelp-mode)
 
 (magit-todos-mode)
@@ -74,7 +69,8 @@ cursor to the new line."
   (eldoc-add-command
    'electrify-return-if-match
    'paredit-backward-delete
-   'paredit-close-round))
+   'paredit-close-round)
+  (prog-hooks))
 
 ;(define-key paredit-mode-map (kbd "RET") nil)
 
@@ -87,7 +83,6 @@ cursor to the new line."
 (add-hook 'slime-repl-mode-hook 'lisp-hooks)
 (add-hook 'slime-repl-mode-hook 'override-slime-del-key)
 (add-hook 'scheme-mode 'lisp-hooks)
-;(add-hook 'geiser-repl-startup-hook 'lisp-hooks)
 (add-hook 'c-mode-common-hook 'c-hooks)
 (add-hook 'prog-mode 'prog-hooks)
 

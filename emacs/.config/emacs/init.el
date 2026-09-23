@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 (let ((paths '("~/.config/emacs/lisp")))
   (dolist (path paths)
     (add-to-list 'load-path path)))
