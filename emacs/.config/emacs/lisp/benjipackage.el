@@ -13,7 +13,7 @@
                   company        company-quickhelp       dirvish     fancy-compilation
                   magit          magit-todos             forge       po-mode
                   org            org-bullets             ox-gfm      markdown-mode
-                  pinentry)))
+                  pinentry       all-the-icons)))
                   
   (dolist (package packages)
     (unless (package-installed-p package)
