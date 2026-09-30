@@ -7,3 +7,7 @@
 
 ;;; Use UTF-8
 (setf sb-impl::*default-external-format* :utf-8)
+
+(pushnew (merge-pathnames ".config/sbcl/asdf/"
+			  (user-homedir-pathname))
+	asdf:*central-registry* :test #'equal)

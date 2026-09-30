@@ -6,3 +6,6 @@ compinit
 promptinit
 
 prompt restore
+
+typeset -Ux PATH path
+path=(~/.local/bin $path)
