@@ -6,6 +6,7 @@
 (setq create-lockfiles nil)
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 
-(setq inferior-lisp-program "sbcl")
+(setenv "GNUPGHOME" "~/.config/gnupg")
+(setenv "ZDOTDIR" "~/.config/zsh")
 
 (provide 'benjifile)
