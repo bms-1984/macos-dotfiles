@@ -1,2 +1,2 @@
 #!/bin/zsh
-rlwrap /opt/homebrew/bin/sbcl --userinit $HOME/.config/sbcl/init.lisp $@
+rlwrap /opt/homebrew/bin/sbcl $@ --userinit $HOME/.config/sbcl/init.lisp
